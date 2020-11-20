@@ -1,0 +1,16 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    username: sa
+    url: jdbc:h2:mem:testdb
+
+keycloak:
+  server:
+    realmId: stompchat
+    contextPath: /auth
+    adminUser:
+      username: chat-admin
+      password: chat
+    realmImportFile: stompchat-realm.json

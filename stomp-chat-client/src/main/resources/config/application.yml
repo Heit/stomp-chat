@@ -1,0 +1,21 @@
+#server:
+#    address: 127.0.0.1
+#    port: 8084
+
+chat:
+    keycloak:
+        realm: stompchat
+        authServerUrl: http://localhost:8083/auth
+        clientSecret: 20752ab4-4633-4d2c-bbd3-1a0c42590d56
+        clientId: chat-cli
+    base:
+        url: http://localhost:8082/ws-main
+        baseMessage: /app/message
+
+shell:
+    out:
+        info: CYAN
+        success: GREEN
+        warning: YELLOW
+        error: RED
+

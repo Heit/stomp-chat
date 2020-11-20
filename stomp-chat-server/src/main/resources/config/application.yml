@@ -1,0 +1,10 @@
+server:
+    address: 127.0.0.1
+    port: 8082
+
+chat:
+    keycloak:
+        realm: stompchat
+        authServerUrl: http://localhost:8083/auth
+        clientSecret: c93ff2fe-23b7-4c54-a992-730673d446fb
+        clientId: chat-cli
